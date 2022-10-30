@@ -10,17 +10,17 @@ configs.setup{
 
     -- Install parser synchronously (only applied to `ensure_installed`)
     sync_install = false,
-    
+
     -- Automatically install missing parsers when entering buffer
     auto_install = true,
 
     -- List of parsers to ignore installing (for 'all')
     ignore_install = { "" },
-    
+
     highlight = {
         enable = true, -- false will diable the whole extension
         disable = { "" }, -- list of language that will be disabled
-        additional_vim_regex_highlighting = true,        
+        additional_vim_regex_highlighting = true,
     },
 
     indent = { enable = true, disable = { ""} },
