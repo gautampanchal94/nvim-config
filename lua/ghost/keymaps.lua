@@ -2,7 +2,7 @@
 
 local opts = { noremap = true, silent = true }
 
-local term_opts = {silent = true }
+local term_opts = { silent = true }
 
 -- shorten function name
 local keymap = vim.api.nvim_set_keymap
@@ -28,17 +28,17 @@ vim.g.localleader = "\\"
 -- keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 
 -- Insert Mode --
--- leaving insert mode 
-keymap('i','jk','<ESC>',opts)
+-- leaving insert mode
+keymap("i", "jk", "<ESC>", opts)
 
 -- Visual Mode --
 -- Stay in indent mode
-keymap('v', '<', '<gv', opts)
-keymap('v', '>', '>gv', opts)
+keymap("v", "<", "<gv", opts)
+keymap("v", ">", ">gv", opts)
 
 -- Mode text up and down
-keymap('v', '<A-j>', ':m .+1<CR>==', opts)
-keymap('v', '<A-k>', ':m .-2<CR>==', opts)
+keymap("v", "<A-j>", ":m .+1<CR>==", opts)
+keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 
 -- Visual Block --
 -- Move text up and down
@@ -49,5 +49,8 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Normal Mode --
 -- NvimTree
-keymap("n","n",[[:NvimTreeToggle<CR>]],opts)
+keymap("n", "n", [[:NvimTreeToggle<CR>]], opts)
 
+-- split screen
+keymap("n", "<C-w> s", ":split", opts) -- split horizontally [[:split || :sp ]]
+keymap("n", "<C-w> v", ":vsplit", opts) -- split vertically [[:vsplit || :vsp ]]
