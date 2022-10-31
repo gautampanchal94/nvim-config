@@ -1,6 +1,7 @@
 require("ghost.vars")
 require("ghost.opts")
 require("ghost.keymaps")
+require("ghost.colorscheme")
 require("ghost.plugins")
 require("ghost.cmp")
 require("ghost.lsp")

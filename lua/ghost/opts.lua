@@ -22,8 +22,9 @@ opt.incsearch = true -- use incremental search
 opt.hlsearch = true -- highlight search matches
 
 -- [[ Theme ]]
-opt.termguicolors = true -- set term gui colors
+opt.termguicolors = false -- set term gui colors
 opt.wrap = true -- display lines as one long line
+opt.guifont = "monospace:h12" -- the font used in graphical neovim app
 
 -- [[ Whitespace ]]
 opt.expandtab = true -- use spaces instead of tabs
