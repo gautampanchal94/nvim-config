@@ -74,6 +74,13 @@ return packer.startup(function(use)
 	use("williamboman/nvim-lsp-installer") -- simple to use lsp installer
 	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
 
+	-- telescope
+	use({
+		"nvim-telescope/telescope.nvim",
+		tag = "0.1.0",
+	})
+    use("nvim-telescope/telescope-media-files.nvim")
+
 	-- autopait brackets
 	use({
 		"windwp/nvim-autopairs",
