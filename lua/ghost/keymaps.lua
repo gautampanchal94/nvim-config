@@ -56,6 +56,14 @@ keymap("n", "<C-w> s", ":split", opts) -- split horizontally [[:split || :sp ]]
 keymap("n", "<C-w> v", ":vsplit", opts) -- split vertically [[:vsplit || :vsp ]]
 
 -- telescope
-keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
--- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts )
+-- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+keymap(
+	"n",
+	"<leader>f",
+	"<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>",
+	opts
+)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader>dd", "<cmd>Telescope diagnostics<CR>", opts)
+-- without telescope plugin
+-- keymap("n", "<leader>dd", "<cmd>lua vim.diagnostic.setlocllist()<CR>", opts)
