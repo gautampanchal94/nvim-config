@@ -79,7 +79,10 @@ return packer.startup(function(use)
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.0",
 	})
-    use("nvim-telescope/telescope-media-files.nvim")
+	use("nvim-telescope/telescope-media-files.nvim")
+
+	-- gitsigns
+	use("lewis6991/gitsigns.nvim")
 
 	-- autopait brackets
 	use({
