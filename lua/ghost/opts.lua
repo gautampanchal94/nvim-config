@@ -4,7 +4,7 @@ local opt = vim.opt
 
 -- [[ Context ]]
 opt.number = true -- set line numbers
-opt.relativenumber = false -- set relative line numbers
+opt.relativenumber = true-- set relative line numbers
 opt.scrolloff = 8 -- min num lines of context
 opt.signcolumn = "yes" -- show the sign column
 opt.cursorline = false -- highlight current line
