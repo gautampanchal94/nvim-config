@@ -4,7 +4,7 @@ local opt = vim.opt
 
 -- [[ Context ]]
 opt.number = true -- set line numbers
-opt.relativenumber = true-- set relative line numbers
+opt.relativenumber = true -- set relative line numbers
 opt.scrolloff = 8 -- min num lines of context
 opt.signcolumn = "yes" -- show the sign column
 opt.cursorline = false -- highlight current line
@@ -24,6 +24,7 @@ opt.hlsearch = true -- highlight search matches
 -- [[ Theme ]]
 opt.termguicolors = false -- set term gui colors
 opt.wrap = true -- display lines as one long line
+opt.linebreak = true -- companion to wrap, don't split words
 opt.guifont = "monospace:h12" -- the font used in graphical neovim app
 
 -- [[ Whitespace ]]
