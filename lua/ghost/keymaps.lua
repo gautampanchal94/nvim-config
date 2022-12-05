@@ -49,7 +49,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Normal Mode --
 -- NvimTree
-keymap("n", "n", [[:NvimTreeToggle<CR>]], opts)
+keymap("n", "<leader>e", [[:NvimTreeToggle<CR>]], opts)
 
 -- split screen
 keymap("n", "<C-w> s", ":split", opts) -- split horizontally [[:split || :sp ]]

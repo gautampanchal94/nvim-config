@@ -73,7 +73,7 @@ return packer.startup(function(use)
 	use("neovim/nvim-lspconfig") -- enable LSP
 	use("williamboman/mason.nvim") -- simple to use lsp installer
 	use("williamboman/mason-lspconfig.nvim") -- simple to use lsp installer
-	--	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
+	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
 
 	-- telescope
 	use({
@@ -85,12 +85,17 @@ return packer.startup(function(use)
 	-- gitsigns
 	use("lewis6991/gitsigns.nvim")
 
-	-- autopait brackets
+	-- autopair brackets
 	use({
 		"windwp/nvim-autopairs",
 		config = function()
 			require("nvim-autopairs").setup({})
 		end,
+	})
+
+	-- comment
+	use({
+		"numToStr/Comment.nvim",
 	})
 
 	-- nvim-tree
@@ -99,9 +104,6 @@ return packer.startup(function(use)
 		requires = {
 			"kyazdani42/nvim-web-devicons", -- optional, for file icons
 		},
-		config = function()
-			require("nvim-tree").setup({})
-		end,
 	})
 
 	-- lualine
@@ -121,6 +123,9 @@ return packer.startup(function(use)
 
 	-- formatter
 	use("mhartington/formatter.nvim")
+
+	-- vim - be - good game
+	use("ThePrimeagen/vim-be-good")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

@@ -26,6 +26,8 @@ opt.termguicolors = false -- set term gui colors
 opt.wrap = true -- display lines as one long line
 opt.linebreak = true -- companion to wrap, don't split words
 opt.guifont = "monospace:h12" -- the font used in graphical neovim app
+opt.background = "dark" -- make defalut background dark
+opt.signcolumn = "yes" --
 
 -- [[ Whitespace ]]
 opt.expandtab = true -- use spaces instead of tabs
@@ -33,8 +35,15 @@ opt.shiftwidth = 4 -- size of an indent
 opt.softtabstop = 4 -- number of spaces tabs count for in insert mode
 opt.tabstop = 4 -- number of spaces tabs count for
 
+-- [[ Backspace ]]
+opt.backspace = "indent,eol,start" -- make backspace work better
+
 -- [[ Splits ]]
 opt.splitright = true -- Place new window to right of current one
 opt.splitbelow = true -- Place new window below the current one
 
-vim.opt.shortmess:append("c")
+-- [[ Extra Options ]]
+opt.clipboard:append("unnamedplus") -- use system clipboard
+-- opt.iskeyword:append("-") -- it will make '-' count as one word
+opt.shortmess:append("c")
+
