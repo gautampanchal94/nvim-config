@@ -8,5 +8,5 @@ if not status_ok then
 	return
 end
 
--- vim.cmd("colorscheme monokai")
 require("ofirkai").setup({})
+-- vim.cmd("colorscheme nightfly")

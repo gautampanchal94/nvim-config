@@ -22,8 +22,8 @@ opt.incsearch = true -- use incremental search
 opt.hlsearch = true -- highlight search matches
 
 -- [[ Theme ]]
-opt.termguicolors = false -- set term gui colors
-opt.wrap = true -- display lines as one long line
+opt.termguicolors = true -- set term gui colors
+opt.wrap = false -- display lines as one long line
 opt.linebreak = true -- companion to wrap, don't split words
 opt.guifont = "monospace:h12" -- the font used in graphical neovim app
 opt.background = "dark" -- make defalut background dark
@@ -43,7 +43,5 @@ opt.splitright = true -- Place new window to right of current one
 opt.splitbelow = true -- Place new window below the current one
 
 -- [[ Extra Options ]]
-opt.clipboard:append("unnamedplus") -- use system clipboard
 -- opt.iskeyword:append("-") -- it will make '-' count as one word
 opt.shortmess:append("c")
-

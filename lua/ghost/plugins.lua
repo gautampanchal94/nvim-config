@@ -1,5 +1,4 @@
 -- [[ ghost/plugins.lua ]]
-
 local fn = vim.fn
 
 -- Automatically install packer
@@ -50,6 +49,7 @@ return packer.startup(function(use)
 	-- colorscheme
 	-- use("tanvirtin/monokai.nvim")
 	use("ofirgall/ofirkai.nvim")
+	use("bluz71/vim-nightfly-colors")
 
 	--treesitter
 	use({
