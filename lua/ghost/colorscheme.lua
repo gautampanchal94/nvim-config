@@ -8,5 +8,13 @@ if not status_ok then
 	return
 end
 
-require("ofirkai").setup({})
+local scheme = require("ofirkai.design").scheme -- get ofirkai colorscheme
+
+require("ofirkai").setup({
+	-- custom_hlgroups = {
+	-- 	LineNr = {
+	-- 		fg = scheme.comment_fg,
+	-- 	},
+	-- },
+})
 -- vim.cmd("colorscheme nightfly")

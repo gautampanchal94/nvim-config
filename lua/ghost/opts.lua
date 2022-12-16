@@ -45,3 +45,20 @@ opt.splitbelow = true -- Place new window below the current one
 -- [[ Extra Options ]]
 -- opt.iskeyword:append("-") -- it will make '-' count as one word
 opt.shortmess:append("c")
+
+vim.cmd([[set clipboard+=unnamedplus]])
+
+if vim.fn.has("wsl") == 1 then
+	vim.g.clipboard = {
+		name = "win32yank-wsl",
+		copy = {
+			["+"] = "win32yank.exe -i --crlf",
+			["*"] = "win32yank.exe -i --crlf",
+		},
+		paste = {
+			["+"] = "win32yank.exe -o --lf",
+			["*"] = "win32yank.exe -o --lf",
+		},
+		cache_enabled = false,
+	}
+end

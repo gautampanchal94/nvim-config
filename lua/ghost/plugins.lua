@@ -57,6 +57,9 @@ return packer.startup(function(use)
 		run = ":TSUpdate",
 	})
 
+	-- tmux
+	use("christoomey/vim-tmux-navigator")
+
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
 	use("hrsh7th/cmp-buffer") -- buffer completions
@@ -123,9 +126,6 @@ return packer.startup(function(use)
 
 	-- formatter
 	use("mhartington/formatter.nvim")
-
-	-- vim - be - good game
-	use("ThePrimeagen/vim-be-good")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

@@ -55,6 +55,12 @@ keymap("n", "<leader>e", [[:NvimTreeToggle<CR>]], opts)
 keymap("n", "<C-w> s", ":split", opts) -- split horizontally [[:split || :sp ]]
 keymap("n", "<C-w> v", ":vsplit", opts) -- split vertically [[:vsplit || :vsp ]]
 
+-- tmux
+vim.g.tmux_navigator_no_mappings = 1
+keymap("n", "<C-h>", ":<C-U>TmuxNavigateLeft<cr>", opts)
+keymap("n", "<C-j>", ":<C-U>TmuxNavigateDown<cr>", opts)
+keymap("n", "<C-k>", ":<C-U>TmuxNavigateUp<cr>", opts)
+
 -- telescope
 -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap(
