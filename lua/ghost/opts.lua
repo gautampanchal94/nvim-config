@@ -42,6 +42,12 @@ opt.backspace = "indent,eol,start" -- make backspace work better
 opt.splitright = true -- Place new window to right of current one
 opt.splitbelow = true -- Place new window below the current one
 
+-- [[ Indent Backline ]]
+-- Enable `lukas-reineke/indent-blankline.nvim`
+-- See `:help indent_blankline.txt`
+opt.list = true
+opt.listchars:append("space:⋅")
+
 -- [[ Extra Options ]]
 -- opt.iskeyword:append("-") -- it will make '-' count as one word
 opt.shortmess:append("c")

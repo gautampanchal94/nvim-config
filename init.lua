@@ -1,6 +1,7 @@
 require("ghost.vars")
 require("ghost.opts")
 require("ghost.colorscheme")
+require("ghost.indent-line")
 require("ghost.plugins")
 require("ghost.cmp")
 require("ghost.lsp")

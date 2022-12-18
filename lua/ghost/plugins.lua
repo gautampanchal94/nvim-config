@@ -127,6 +127,9 @@ return packer.startup(function(use)
 	-- formatter
 	use("mhartington/formatter.nvim")
 
+	-- indent-backline
+	use("lukas-reineke/indent-blankline.nvim")
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
