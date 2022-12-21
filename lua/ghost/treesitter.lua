@@ -6,7 +6,7 @@ end
 
 configs.setup({
 	-- A list of parser names, or "all"
-	ensure_installed = { "c", "lua", "go" },
+	ensure_installed = { "c", "lua", "go", "rust" },
 
 	-- Install parser synchronously (only applied to `ensure_installed`)
 	sync_install = false,

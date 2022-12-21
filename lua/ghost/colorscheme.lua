@@ -10,11 +10,5 @@ end
 
 local scheme = require("ofirkai.design").scheme -- get ofirkai colorscheme
 
-require("ofirkai").setup({
-	-- custom_hlgroups = {
-	-- 	LineNr = {
-	-- 		fg = scheme.comment_fg,
-	-- 	},
-	-- },
-})
+require("ofirkai").setup()
 -- vim.cmd("colorscheme nightfly")

@@ -3,11 +3,12 @@
 local opt = vim.opt
 
 -- [[ Context ]]
+-- opt.guicursor = "" -- set cursor as block
 opt.number = true -- set line numbers
 opt.relativenumber = true -- set relative line numbers
 opt.scrolloff = 8 -- min num lines of context
 opt.signcolumn = "yes" -- show the sign column
-opt.cursorline = false -- highlight current line
+opt.cursorline = true -- highlight current line
 
 -- [[ Filetypes ]]
 opt.encoding = "utf8" -- string encoding to use
@@ -19,7 +20,7 @@ opt.swapfile = false -- swapping file
 opt.ignorecase = true -- ignore case in search pattern
 opt.smartcase = true -- smart case
 opt.incsearch = true -- use incremental search
-opt.hlsearch = true -- highlight search matches
+opt.hlsearch = false -- highlight search matches
 
 -- [[ Theme ]]
 opt.termguicolors = true -- set term gui colors
@@ -27,7 +28,7 @@ opt.wrap = false -- display lines as one long line
 opt.linebreak = true -- companion to wrap, don't split words
 opt.guifont = "monospace:h12" -- the font used in graphical neovim app
 opt.background = "dark" -- make defalut background dark
-opt.signcolumn = "yes" --
+opt.signcolumn = "yes"
 
 -- [[ Whitespace ]]
 opt.expandtab = true -- use spaces instead of tabs

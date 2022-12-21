@@ -51,6 +51,12 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- NvimTree
 keymap("n", "<leader>e", [[:NvimTreeToggle<CR>]], opts)
 
+--- center page up/down & search
+keymap("n", "<C-u>", "<C-u>zz", opts)
+keymap("n", "<C-d>", "<C-d>zz", opts)
+keymap("n", "n", "nzzzv", opts)
+keymap("n", "N", "Nzzzv", opts)
+
 -- split screen
 keymap("n", "<C-w> s", ":split", opts) -- split horizontally [[:split || :sp ]]
 keymap("n", "<C-w> v", ":vsplit", opts) -- split vertically [[:vsplit || :vsp ]]
